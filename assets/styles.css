@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+#body {
+    padding-bottom: 5rem;
+}
+
+/* Scalable Container
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container.scalable {
+    width: 95%;
+    max-width: none;
+}
+
+/* Banner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.banner {
+    background-color: #2f3445; /* Machine Learning Color is orange */
+    padding: 3rem 0;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.banner h2 {
+    color: #a5b1cd;
+    display: inline-block;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.banner h2:hover {
+    color: #b4b5bf;
+    cursor: pointer;
+}
+
+.banner Img {
+    position: relative;
+    float: right;
+    height: 5rem;
+    margin-top: 1.25rem
+}
+
+/* Dropdowns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.Select-control {
+    color: #a5b1cd;
+    overflow: visible;
+}
+
+.Select {
+    color: #a5b1cd;
+}
+
+.Select-menu-outer {
+    background-color: #2f3445;
+    border: 1px solid gray;
+}
+
+.Select div {
+    background-color: #2f3445;
+}
+
+.Select-menu-outer div:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.Select-value-label {
+    color: #a5b1cd !important;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    padding: 2rem 0;
+}
+
+#last-card {
+    border-bottom: none;
+    width: 80%;
+}
+
+.graph-title {
+    font-size: 2rem;
+    margin: 15% 0 0 25%;
+}
+
+#button-zero-threshold {
+    background-color: #2f3445;
+    color: #a5b1cd;
+    border-color: gray;
+}
+
+#button-zero-threshold:hover {
+    border-color: white;
+}
+
+#button-card {
+    display: flex;
+    flex-direction: column;
+}
+
+#first-card {
+    padding-top: 0;
+}
+
+/* Slider
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.rc-slider-track {
+    background-color: #13c6e9;
+}
+
+.rc-slider-handle {
+    border: solid 2px #13c6e9;
+}
+
+/* Left column
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#slider-svm-parameter-C-coef {
+    padding: 5px 10px 25px;
+}
+
+#slider-svm-parameter-gamma-coef {
+    padding: 5px 10px 25px
+}
+
+#shrinking-container {
+    padding: 20px 10px 25px 4px
+}
+
+/* Graph container
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#svm-graph-container {
+    margin-top: 0.5rem;
+}
+
+#svm-graph-container .graph-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* Remove Undo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#graph-line-roc-curve .modebar, #graph-pie-confusion-matrix .modebar {
+    display: none;
+}
+
+/* app specific */
+
+#upload-data {
+  height: 60px;
+  lineHeight: 60px;
+  borderWidth: 1px;
+  borderStyle: dashed;
+  borderRadius: 5px;
+  margin: 10px;
+}
+
+#selected-series {
+  display: contents;
+  flex-direction: row;
+  overflow: visible;
+}
+
+#selection-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  width:100%;
+}
+
+#selected-column-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+input, select, textarea{
+    color: #a5b1cd;
+}
+
+textarea:focus, input:focus {
+    color: #a5b1cd;
+}
+
+#distributions {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+#fit-button {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+#table-panel {
+  width: 100%;
+  min-height: 500px;
+  max-height: 1000px;
+  float: left;
+  overflow-y :scroll;
+  overflow-x :scroll;
+}
+
+#data-description {
+  width: 300px;
+  font-style: italic;
+}
+
+#data-filename {
+  width: 300px;
+  font-weight: bold;
+}
+
+#apply-log-transform-panel {
+  vertical-align: middle;
+}
+
+#distributions .label {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#fitted-panel {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width:100%;
+  #border: 1px solid lightgrey;
+  #border-radius: 4px;
+  #border-style: solid;
+}
+
+#fitted-sec2-panel {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  margin-right: 4px;
+  margin-top: 8px;
+}
+
+#fitted-sec1-panel {
+  display: flex;
+  flex-direction: row;
+}
+#selected-column-sec1-panel{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+#apply-panel {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+#apply-sec2a-panel {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 22px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#apply-sec2b-panel {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  #vertical-align: middle;
+}
+
+#apply-sec1-panel {
+  margin-right: 10px;
+}
+textarea {
+  min-height: 35px;
+  height: 35px;
+}
+
+#fit-button {
+  color: #a5b1cd;
+}
+
+#series-characteristics {
+  width: 600px;
+  height: 60px;
+}
+
+body {
+    width:100%;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#fitted-distributions {
+  overflow: visible;
+  height: auto;
+}
+
+#main-panel {
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
+#left-panel {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 350px;
+}
+
+#output-panel {
+  margin-left: 10px;
+  width: 100%;
+}
+
+#last-card {
+  float: left;
+  width: 100%;
+}
+
+#message-panel {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#graph-refresh {
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#chart {
+  height: 550px;
+}
+
+#chart-panel {
+  height: 550px;
+}
+
+#fitted-par {
+  height: 45px;
+}
+
+#estimated-quantiles {
+  height: 45px;
+}
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
